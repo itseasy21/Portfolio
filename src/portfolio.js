@@ -16,7 +16,7 @@ const greeting = {
   full_name: "Shubham Mathur",
   subTitle: "Full Stack Developer, Blockchain Enthusiast 🔥. Always learning.",
   resumeLink:
-    "https://app.enhancv.com/share/fff13365?utm_medium=growth&utm_campaign=share-resume&utm_source=dynamic",
+    "https://app.enhancv.com/share/ac03c824?utm_medium=growth&utm_campaign=share-resume&utm_source=dynamic",
   mail: "mailto:itseasy21@gmail.com",
 };
 
