@@ -482,6 +482,35 @@ const experience = {
         },
       ],
     },
+    {
+      title: "Publications",
+      experiences: [
+        {
+          title:
+            "A computational study and meta-analysis of content based image retrieval",
+          company:
+            "International Journal of Advanced Technology and Engineering Exploration (IJATEE)",
+          company_url: "http://bit.ly/2FIToSU",
+          logo_path: "accentsJournal.png",
+          duration: "Jan 2019",
+          location: " ",
+          description: " ",
+          color: "#4285F4",
+        },
+        {
+          title:
+            "A methodological study and analysis of machine learning algorithms",
+          company:
+            "International Journal of Advanced Technology and Engineering Exploration (IJATEE)",
+          company_url: "http://bit.ly/2OyncV1",
+          logo_path: "accentsJournal.png",
+          duration: "Feb 2019",
+          location: " ",
+          description: " ",
+          color: "#4285F4",
+        },
+      ],
+    },
   ],
 };
 
