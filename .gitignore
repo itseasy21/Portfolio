@@ -5,6 +5,7 @@
 /.pnp
 /build
 .pnp.js
+/.yarn
 
 # testing
 /coverage

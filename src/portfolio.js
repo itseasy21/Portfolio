@@ -397,11 +397,26 @@ const experience = {
       title: "Work Experience",
       experiences: [
         {
+          title: "Full Stack Developer",
+          company: "Directed Electric Australia",
+          company_url: "https://www.directed.com.au/",
+          logo_path: "directed.png",
+          duration: "Feb 2022 - Present",
+          location: "Office",
+          description: `Operating from 3 main divisions; OEM, Telematics & Retail, Directed partner with leading global brands to bring product to market across leading National Retailers, Specialist Chains, Independent Stores, plus an extensive network of trade and OEM customers.
+          ⚈ Working on the current next-generation telematics platform build and evolution to a large scale IoT platform. In addition, occasional maintenance of various operational tools used to support the previous generation of Telematics and IoT platforms, including internal & customer-facing portals.
+          ⚈ Working with teams globally around Australia (Melbourne, Brisbane), Hungary & New Zealand to falicitate front-end and backend development.
+          ⚈ Working on tech stack ranging from ReactJS, Express APIs, AWS, i18n (locize), CI/CD Pipeline
+          `,
+          // "I worked on the Dashboard project which helps users track their activities while using Walo Application. I also worked on Ocean Inventory Application and it's Admin panel Backend as well as on Ocean Inventory Admin Front-end using React and also worked on Walo Admin Backend.",
+          color: "#0071C5",
+        },
+        {
           title: "Software Developer",
           company: "Career Success Australia",
           company_url: "https://careersuccessaustralia.com.au/",
           logo_path: "csa.png",
-          duration: "Feb 2020 - Present",
+          duration: "Feb 2021 - Feb 2022",
           location: "Office",
           description: `Career Success Australia offers Career Coaching, Career Counselling & Internships in Australia.
           ⚈ Developed Job Search Portal
@@ -453,7 +468,7 @@ const experience = {
           company: "Tokom Software Pvt. Ltd.",
           company_url: "https://tokomsoft.com/",
           logo_path: "tokom.png",
-          duration: "Feb 2021 - Present",
+          duration: "Apr 2017 - July 2017",
           location: "Office",
           description: " ",
           color: "#196acf",
