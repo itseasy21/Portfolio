@@ -2,7 +2,7 @@
   "private": true,
   "name": "personal-portfolio",
   "version": "1.0.0",
-  "homepage": "https://shubham-mathur.com",
+  "homepage": "https://shubham-mathur.me",
   "scripts": {
     "build": "react-scripts build",
     "predeploy": "npm run build",
