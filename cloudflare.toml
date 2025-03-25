@@ -1,0 +1,44 @@
+[build]
+command = "yarn build"
+publish = "dist"
+node_version = "20.11.1"
+
+[build.environment]
+YARN_VERSION = "3.2.1"
+YARN_ENABLE_IMMUTABLE_INSTALLS = "false"
+
+[site]
+bucket = "./dist"
+entry-point = "."
+
+# Redirects all paths to index.html for client-side routing
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200
+
+# Headers for caching and security
+[[headers]]
+for = "/*"
+[headers.values]
+X-Frame-Options = "DENY"
+X-XSS-Protection = "1; mode=block"
+X-Content-Type-Options = "nosniff"
+Referrer-Policy = "strict-origin-when-cross-origin"
+Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdnjs.cloudflare.com https://code.iconify.design; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https://www.google-analytics.com;"
+
+# Cache static assets with a long TTL
+[[headers]]
+for = "/*.js"
+[headers.values]
+Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+for = "/*.css"
+[headers.values]
+Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+for = "/assets/*"
+[headers.values]
+Cache-Control = "public, max-age=31536000, immutable" 

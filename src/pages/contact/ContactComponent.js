@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
@@ -7,6 +7,9 @@ import { Fade } from "react-reveal";
 import "./ContactComponent.css";
 import { greeting, contactPageData } from "../../portfolio.js";
 import { style } from "glamor";
+import LazyImage from "../../components/LazyImage";
+// Import the image directly
+import profileImage from "../../assests/images/shubham.jpg";
 
 const ContactData = contactPageData.contactSection;
 const blogSection = contactPageData.blogSection;
@@ -28,10 +31,10 @@ function Contact(props) {
         <Fade bottom duration={1000} distance="40px">
           <div className="contact-heading-div">
             <div className="contact-heading-img-div">
-              <img
+              <LazyImage
                 className="profile-pic"
-                src={require(`../../assests/images/${ContactData["profile_image_path"]}`)}
-                alt=""
+                src={profileImage}
+                alt="Profile"
               />
             </div>
             <div className="contact-heading-text-div">

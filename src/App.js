@@ -1,7 +1,12 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import Main from "./containers/Main";
-import { ThemeProvider } from "styled-components";
+import { ThemeProvider as StyledThemeProvider } from "styled-components";
+import {
+  ThemeProvider as BaseUIThemeProvider,
+  createTheme,
+  lightThemePrimitives,
+} from "baseui";
 import { themes } from "./theme";
 import { GlobalStyles } from "./global";
 import { CursorProvider } from "react-cursor-custom";
@@ -18,28 +23,53 @@ function App() {
     }
   }, []);
 
-  const [theme, setTheme] = useState(localStorage.getItem("theme") || "dark");
+  // Set the default theme to "dark" if none is found in localStorage
+  const savedTheme = localStorage.getItem("theme");
+  const initialTheme =
+    savedTheme && (savedTheme === "light" || savedTheme === "dark")
+      ? savedTheme
+      : "dark";
+
+  const [theme, setTheme] = useState(initialTheme);
   const useCursor = settings.useCustomCursor;
 
+  // Make sure we use the correct theme object
+  const currentTheme = themes[theme] || themes.dark;
+
+  // Create a baseui theme with safe defaults
+  const baseUITheme = createTheme({
+    ...lightThemePrimitives,
+    colors: {
+      primary: currentTheme.accentColor,
+      accent: currentTheme.accentBright,
+      background: currentTheme.body,
+      backgroundSecondary: currentTheme.projectCard,
+      contentPrimary: currentTheme.text,
+      contentSecondary: currentTheme.secondaryText,
+    },
+  });
+
   return (
-    <ThemeProvider theme={themes[theme]}>
-      <>
-        <GlobalStyles />
-        <div>
-          {useCursor ? (
-            <CursorProvider
-              color={themes[theme].secondaryText}
-              ringSize={25}
-              transitionTime={75}
-            >
-              <Main theme={themes[theme]} setTheme={setTheme} />
-            </CursorProvider>
-          ) : (
-            <Main theme={themes[theme]} setTheme={setTheme} />
-          )}
-        </div>
-      </>
-    </ThemeProvider>
+    <BaseUIThemeProvider theme={baseUITheme}>
+      <StyledThemeProvider theme={currentTheme}>
+        <>
+          <GlobalStyles />
+          <div>
+            {useCursor ? (
+              <CursorProvider
+                color={currentTheme.secondaryText}
+                ringSize={25}
+                transitionTime={75}
+              >
+                <Main theme={currentTheme} setTheme={setTheme} />
+              </CursorProvider>
+            ) : (
+              <Main theme={currentTheme} setTheme={setTheme} />
+            )}
+          </div>
+        </>
+      </StyledThemeProvider>
+    </BaseUIThemeProvider>
   );
 }
 

@@ -20,6 +20,28 @@
 - In `src/portfolio.js` you can add your personal portfolio details.
 - In `src/theme.js` you can change the theme colors. You can change between Light and Dark theme with the theme switch on the header.
 
+## Deployment
+
+### GitHub Pages
+
+- Run `npm run deploy` to deploy to GitHub Pages
+
+### Cloudflare Pages
+
+1. Make sure you have installed the Wrangler CLI:
+   ```
+   npm install -g wrangler
+   ```
+2. Authenticate with Cloudflare:
+   ```
+   wrangler login
+   ```
+3. Deploy your portfolio:
+   ```
+   npm run deploy:cloudflare
+   ```
+4. Alternatively, connect your GitHub repository to Cloudflare Pages for automatic deployments when you push changes.
+
 ## Technologies used 🛠️
 
 - [React](https://reactjs.org/)
@@ -29,6 +51,7 @@
 - [react-reveal](https://www.react-reveal.com/)
 - [styled-components](https://styled-components.com/)
 - [fleek](https://fleek.co/)
+- [Cloudflare Pages](https://pages.cloudflare.com/)
 
 ## illustrations 🍥
 
