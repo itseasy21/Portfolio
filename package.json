@@ -14,7 +14,11 @@
   },
   "resolutions": {
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-is": "18.2.0",
+    "prop-types": "15.8.1",
+    "react-reveal/react": "18.2.0",
+    "react-cursor-custom/react": "18.2.0"
   },
   "dependencies": {
     "@cloudflare/kv-asset-handler": "^0.3.0",
@@ -35,7 +39,7 @@
     "react-dom": "18.2.0",
     "react-ga": "^3.3.0",
     "react-icons": "^4.2.0",
-    "react-is": "^17.0.1",
+    "react-is": "18.2.0",
     "react-reveal": "1.2.2",
     "react-rounded-image": "2.0.11",
     "react-router-dom": "6.22.3",
@@ -44,8 +48,8 @@
     "styletron-react": "6.1.0"
   },
   "peerDependencies": {
-    "react": "^16.8.0 || ^17.0.0 || ^18.0.0",
-    "react-dom": "^16.8.0 || ^17.0.0 || ^18.0.0"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@iconify/icons-logos": "^1.1.5",

@@ -14,6 +14,8 @@ export default defineConfig({
     alias: {
       // Add any path aliases your project might need
       src: resolve(__dirname, "./src"),
+      react: resolve(__dirname, "./node_modules/react"),
+      "react-dom": resolve(__dirname, "./node_modules/react-dom"),
     },
   },
   optimizeDeps: {
@@ -22,7 +24,15 @@ export default defineConfig({
         ".js": "jsx",
       },
     },
-    include: ["@iconify/react"],
+    include: [
+      "@iconify/react",
+      "react",
+      "react-dom",
+      "react-is",
+      "prop-types",
+      "react-reveal",
+      "react-cursor-custom",
+    ],
   },
   esbuild: {
     loader: "jsx",
@@ -38,13 +48,15 @@ export default defineConfig({
     rollupOptions: {
       output: {
         manualChunks(id) {
-          // Core React dependencies
+          // Core React dependencies - keep everything React-related in one chunk
           if (
-            id.includes("react/") ||
-            id.includes("react-dom") ||
-            id.includes("react-router-dom")
+            id.includes("react") ||
+            id.includes("prop-types") ||
+            id.includes("react-is") ||
+            id.includes("react-reveal") ||
+            id.includes("react-cursor-custom")
           ) {
-            return "react-core";
+            return "react-vendor";
           }
 
           // UI Framework chunks
@@ -64,19 +76,6 @@ export default defineConfig({
           }
           if (id.includes("react-icons") || id.includes("@iconify/react")) {
             return "icons";
-          }
-
-          // Animation and effects
-          if (
-            id.includes("react-reveal") ||
-            id.includes("react-cursor-custom")
-          ) {
-            return "animations";
-          }
-
-          // Utils and helpers
-          if (id.includes("prop-types") || id.includes("react-is")) {
-            return "utils";
           }
 
           // Image handling
