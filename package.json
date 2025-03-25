@@ -55,7 +55,7 @@
     "wrangler": "^3.30.0"
   },
   "engines": {
-    "node": ">=21.7.1",
+    "node": ">=22.11.0",
     "yarn": ">=3.6.3"
   },
   "browserslist": {
