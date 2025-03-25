@@ -8,6 +8,7 @@
     "build": "vite build",
     "predeploy": "yarn build",
     "deploy": "gh-pages -b gh-pages -d build",
+    "deploy:cloudflare": "wrangler pages deploy dist",
     "dev": "vite",
     "preview": "vite preview"
   },

@@ -1,24 +1,20 @@
-name = "portfolio" # Change this to your project name
-type = "webpack"
-account_id = "" # Fill this with your Cloudflare account ID
-workers_dev = true
-route = ""
-zone_id = ""
-compatibility_date = "2023-10-30"
-
-[site]
-bucket = "./dist"
-entry-point = "."
+name = "portfolio"
+compatibility_date = "2024-03-25"
+pages_build_output_dir = "./dist"
 
 [build]
 command = "yarn build"
-upload.format = "service-worker"
 
-[build.upload]
-format = "service-worker"
+[build.environment]
+NODE_VERSION = "20.11.1"
+YARN_VERSION = "3.2.1"
+YARN_ENABLE_IMMUTABLE_INSTALLS = "false"
+
+[site]
+bucket = "./dist"
 
 [env.production]
-name = "portfolio-prod" # Change this to your production project name
+name = "portfolio-prod"
 
 [env.staging]
-name = "portfolio-staging" # Change this to your staging project name 
+name = "portfolio-staging" 
