@@ -17,6 +17,20 @@ function ExperienceAccordion(props) {
                 className="accord-panel"
                 title={section["title"]}
                 key={section["title"]}
+                overrides={{
+                  Header: {
+                    style: {
+                      backgroundColor: theme.body,
+                      color: theme.text,
+                    },
+                  },
+                  Content: {
+                    style: {
+                      backgroundColor: theme.body,
+                      color: theme.text,
+                    },
+                  },
+                }}
               >
                 {section["experiences"].map((experience, index) => {
                   return (

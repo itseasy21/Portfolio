@@ -49,6 +49,13 @@ function App() {
     },
   });
 
+  // Function to handle theme changes
+  const handleThemeChange = (newTheme) => {
+    if (newTheme === "light" || newTheme === "dark") {
+      setTheme(newTheme);
+    }
+  };
+
   return (
     <BaseUIThemeProvider theme={baseUITheme}>
       <StyledThemeProvider theme={currentTheme}>
@@ -61,10 +68,10 @@ function App() {
                 ringSize={25}
                 transitionTime={75}
               >
-                <Main theme={currentTheme} setTheme={setTheme} />
+                <Main theme={currentTheme} setTheme={handleThemeChange} />
               </CursorProvider>
             ) : (
-              <Main theme={currentTheme} setTheme={setTheme} />
+              <Main theme={currentTheme} setTheme={handleThemeChange} />
             )}
           </div>
         </>
