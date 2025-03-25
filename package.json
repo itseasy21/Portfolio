@@ -7,7 +7,7 @@
   "scripts": {
     "build": "vite build",
     "predeploy": "yarn build",
-    "deploy": "gh-pages -b gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "deploy:cloudflare": "wrangler pages deploy dist",
     "dev": "vite",
     "preview": "vite preview"
