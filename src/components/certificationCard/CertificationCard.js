@@ -1,11 +1,28 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./CertificationCard.css";
 import { Fade } from "react-reveal";
 import { style } from "glamor";
+import LazyImage from "../LazyImage";
 
 function CertificationCard(props) {
   const certificate = props.certificate;
   const theme = props.theme;
+  const [logoSrc, setLogoSrc] = useState(null);
+
+  useEffect(() => {
+    // Use a simpler approach to load images
+    try {
+      // Create a direct URL to the image
+      const imageUrl = new URL(
+        `../../assests/images/${certificate.logo_path}`,
+        import.meta.url
+      ).href;
+      setLogoSrc(imageUrl);
+    } catch (error) {
+      console.error("Error loading image:", error);
+    }
+  }, [certificate.logo_path]);
+
   const styles = style({
     boxShadow: `0px 2px 5px ${certificate.color_code}`,
     border: `1px solid ${certificate.color_code}`,
@@ -28,11 +45,13 @@ function CertificationCard(props) {
               className="cert-header"
               style={{ backgroundColor: certificate.color_code }}
             >
-              <img
-                className="logo_img"
-                src={require(`../../assests/images/${certificate.logo_path}`)}
-                alt={certificate.alt_name}
-              />
+              {logoSrc && (
+                <LazyImage
+                  className="logo_img"
+                  src={logoSrc}
+                  alt={certificate.alt_name}
+                />
+              )}
             </div>
             {/* <div className="content-details fadeIn-top">
 									<h3 className="content-title" style={{ color: theme.body }}>

@@ -1,11 +1,27 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./DegreeCard.css";
 import { Fade, Flip } from "react-reveal";
 import { style } from "glamor";
+import LazyImage from "../LazyImage";
 
 function DegreeCard(props) {
   const degree = props.degree;
   const theme = props.theme;
+  const [logoSrc, setLogoSrc] = useState(null);
+
+  useEffect(() => {
+    // Use a simpler approach to load images
+    try {
+      // Create a direct URL to the image
+      const imageUrl = new URL(
+        `../../assests/images/${degree.logo_path}`,
+        import.meta.url
+      ).href;
+      setLogoSrc(imageUrl);
+    } catch (error) {
+      console.error("Error loading image:", error);
+    }
+  }, [degree.logo_path]);
 
   const style_img = style({
     width: "220px",
@@ -71,15 +87,17 @@ function DegreeCard(props) {
     <div className="degree-card">
       <Flip left duration={2000}>
         <div {...style_img}>
-          <img
-            style={{
-              maxWidth: "100%",
-              maxHeight: "100%",
-              transform: "scale(-50%, -50%)",
-            }}
-            src={require(`../../assests/images/${degree.logo_path}`)}
-            alt={degree.alt_name}
-          />
+          {logoSrc && (
+            <LazyImage
+              style={{
+                maxWidth: "100%",
+                maxHeight: "100%",
+                transform: "scale(-50%, -50%)",
+              }}
+              src={logoSrc}
+              alt={degree.alt_name}
+            />
+          )}
         </div>
       </Flip>
       <Fade right duration={2000} distance="40px">
@@ -102,10 +120,14 @@ function DegreeCard(props) {
               </h3>
             </div>
           </div>
-          <div classname="body-content">
-            {degree.descriptions.map((sentence) => {
+          <div className="body-content">
+            {degree.descriptions.map((sentence, index) => {
               return (
-                <p className="content-list" style={{ color: theme.text }}>
+                <p
+                  className="content-list"
+                  style={{ color: theme.text }}
+                  key={index}
+                >
                   {sentence}
                 </p>
               );

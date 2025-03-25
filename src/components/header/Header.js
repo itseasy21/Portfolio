@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Header.css";
 import { Fade } from "react-reveal";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { greeting, settings } from "../../portfolio.js";
 import { CgSun } from "react-icons/cg/";
 import { HiMoon } from "react-icons/hi";
@@ -66,7 +66,7 @@ function Header(props) {
     <Fade top duration={1000} distance="20px">
       <div>
         <header className="header">
-          <NavLink to={link} tag={Link} className="logo">
+          <NavLink to={link} className="logo">
             <span style={{ color: theme.text }}></span>
             <span className="logo-name" style={{ color: theme.text }}>
               {greeting.logo_name}
@@ -82,9 +82,11 @@ function Header(props) {
               <NavLink
                 className="homei"
                 to="/home"
-                tag={Link}
-                activeStyle={{ fontWeight: "bold" }}
-                style={{ borderRadius: 5, color: theme.text }}
+                style={({ isActive }) => ({
+                  fontWeight: isActive ? "bold" : "normal",
+                  borderRadius: 5,
+                  color: theme.text,
+                })}
               >
                 Home
               </NavLink>
@@ -93,50 +95,63 @@ function Header(props) {
               <NavLink
                 className="ec"
                 to="/education"
-                tag={Link}
-                activeStyle={{ fontWeight: "bold" }}
-                style={{ borderRadius: 5, color: theme.text }}
+                style={({ isActive }) => ({
+                  fontWeight: isActive ? "bold" : "normal",
+                  borderRadius: 5,
+                  color: theme.text,
+                })}
               >
                 Education and Certifications
               </NavLink>
             </li>
             <li>
               <NavLink
-                className="xp"
+                className="exp"
                 to="/experience"
-                tag={Link}
-                activeStyle={{ fontWeight: "bold" }}
-                style={{ borderRadius: 5, color: theme.text }}
+                style={({ isActive }) => ({
+                  fontWeight: isActive ? "bold" : "normal",
+                  borderRadius: 5,
+                  color: theme.text,
+                })}
               >
                 Experience
               </NavLink>
             </li>
             <li>
               <NavLink
-                className="projects"
+                className="proj"
                 to="/projects"
-                tag={Link}
-                activeStyle={{ fontWeight: "bold" }}
-                style={{ borderRadius: 5, color: theme.text }}
+                style={({ isActive }) => ({
+                  fontWeight: isActive ? "bold" : "normal",
+                  borderRadius: 5,
+                  color: theme.text,
+                })}
               >
                 Projects
               </NavLink>
             </li>
             <li>
               <NavLink
-                className="cr"
+                className="contact"
                 to="/contact"
-                tag={Link}
-                activeStyle={{ fontWeight: "bold" }}
-                style={{ borderRadius: 5, color: theme.text }}
+                style={({ isActive }) => ({
+                  fontWeight: isActive ? "bold" : "normal",
+                  borderRadius: 5,
+                  color: theme.text,
+                })}
               >
-                Contact and Resume
+                Contact Me
               </NavLink>
             </li>
-            <button {...styles} onClick={changeTheme}>
-              {icon}
-            </button>
           </ul>
+          <button
+            {...styles}
+            className="icon-button"
+            onClick={changeTheme}
+            aria-label="Toggle theme"
+          >
+            {icon}
+          </button>
         </header>
       </div>
     </Fade>

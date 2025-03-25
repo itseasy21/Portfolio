@@ -1,13 +1,30 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./ExperienceCard.css";
+import LazyImage from "../LazyImage";
 
 function ExperienceCard(props) {
   const experience = props.experience;
   const theme = props.theme;
+  const [logoSrc, setLogoSrc] = useState(null);
+
+  useEffect(() => {
+    // Use a simpler approach to load images
+    try {
+      // Create a direct URL to the image
+      const imageUrl = new URL(
+        `../../assests/images/${experience["logo_path"]}`,
+        import.meta.url
+      ).href;
+      setLogoSrc(imageUrl);
+    } catch (error) {
+      console.error("Error loading image:", error);
+    }
+  }, [experience]);
 
   function NewlineText(text) {
-    const newText = text.split("\n").map((str) => <p>{str}</p>);
-
+    const newText = text
+      .split("\n")
+      .map((str, index) => <p key={index}>{str}</p>);
     return newText;
   }
 
@@ -20,11 +37,13 @@ function ExperienceCard(props) {
       }}
     >
       <div className="experience-card-logo-div">
-        <img
-          className="experience-card-logo"
-          src={require(`../../assests/images/${experience["logo_path"]}`)}
-          alt=""
-        />
+        {logoSrc && (
+          <LazyImage
+            className="experience-card-logo"
+            src={logoSrc}
+            alt={experience["company"]}
+          />
+        )}
       </div>
       <div className="experience-card-body-div">
         <div className="experience-card-header-div">
@@ -60,12 +79,12 @@ function ExperienceCard(props) {
             </p>
           </div>
         </div>
-        <p
+        <div
           className="experience-card-description"
           style={{ color: theme.text }}
         >
           {NewlineText(experience["description"])}
-        </p>
+        </div>
       </div>
     </div>
   );
