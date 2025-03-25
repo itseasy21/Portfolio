@@ -68,28 +68,10 @@ export default defineConfig({
     emptyOutDir: true,
     sourcemap: true,
     rollupOptions: {
-      input: {
-        main: resolve(__dirname, "index.html"),
-      },
       output: {
-        manualChunks: {
-          "react-vendor": [
-            "react",
-            "react-dom",
-            "react-is",
-            "prop-types",
-            "react-reveal",
-            "react-cursor-custom",
-          ],
-          styled: [
-            "styled-components",
-            "styletron-react",
-            "styletron-engine-atomic",
-          ],
-          ui: ["baseui", "react-bootstrap", "bootstrap"],
-        },
-        // Ensure consistent chunk naming
-        chunkFileNames: "assets/[name]-[hash].js",
+        // Disable code splitting by bundling everything into a single file
+        inlineDynamicImports: true,
+        manualChunks: undefined,
         // Ensure assets are properly hashed and organized
         assetFileNames: (assetInfo) => {
           const { name } = assetInfo;
