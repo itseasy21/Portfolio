@@ -48,6 +48,15 @@
   font-family: "Google Sans Medium";
 }
 
+.greeting-description {
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-right: 40px;
+  font-family: "Google Sans Regular";
+}
+
 .greeting-image-div > * {
   max-width: 100%;
   height: auto;
@@ -80,6 +89,11 @@
     font-size: 20px;
   }
 
+  .greeting-description {
+    font-size: 18px;
+    margin-right: 20px;
+  }
+
   .greet-main {
     max-width: 900px;
   }
@@ -98,6 +112,12 @@
     text-align: center;
   }
   .greeting-text-p {
+    font-size: 16px;
+    margin-right: 0px;
+    line-height: normal;
+    text-align: center;
+  }
+  .greeting-description {
     font-size: 16px;
     margin-right: 0px;
     line-height: normal;
