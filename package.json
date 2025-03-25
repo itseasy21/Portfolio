@@ -41,7 +41,8 @@
     "lint-staged": "^10.5.4",
     "prettier": "2.2.1",
     "vite": "^6.2.3",
-    "vite-tsconfig-paths": "^5.1.4"
+    "vite-tsconfig-paths": "^5.1.4",
+    "wrangler": "^3.30.0"
   },
   "browserslist": {
     "production": [

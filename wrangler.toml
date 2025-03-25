@@ -1,0 +1,24 @@
+name = "portfolio" # Change this to your project name
+type = "webpack"
+account_id = "" # Fill this with your Cloudflare account ID
+workers_dev = true
+route = ""
+zone_id = ""
+compatibility_date = "2023-10-30"
+
+[site]
+bucket = "./dist"
+entry-point = "."
+
+[build]
+command = "yarn build"
+upload.format = "service-worker"
+
+[build.upload]
+format = "service-worker"
+
+[env.production]
+name = "portfolio-prod" # Change this to your production project name
+
+[env.staging]
+name = "portfolio-staging" # Change this to your staging project name 
