@@ -9,13 +9,32 @@ const __dirname = dirname(__filename);
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react(), tsconfigPaths()],
+  plugins: [
+    react({
+      babel: {
+        plugins: [
+          [
+            "babel-plugin-styled-components",
+            {
+              displayName: true,
+              pure: true,
+            },
+          ],
+        ],
+      },
+    }),
+    tsconfigPaths(),
+  ],
   resolve: {
     alias: {
       // Add any path aliases your project might need
       src: resolve(__dirname, "./src"),
       react: resolve(__dirname, "./node_modules/react"),
       "react-dom": resolve(__dirname, "./node_modules/react-dom"),
+      "styled-components": resolve(
+        __dirname,
+        "./node_modules/styled-components"
+      ),
     },
   },
   optimizeDeps: {
@@ -32,6 +51,9 @@ export default defineConfig({
       "prop-types",
       "react-reveal",
       "react-cursor-custom",
+      "styled-components",
+      "styletron-react",
+      "baseui",
     ],
   },
   esbuild: {
@@ -46,47 +68,25 @@ export default defineConfig({
     emptyOutDir: true,
     sourcemap: true,
     rollupOptions: {
+      input: {
+        main: resolve(__dirname, "index.html"),
+      },
       output: {
-        manualChunks(id) {
-          // Core React dependencies - keep everything React-related in one chunk
-          if (
-            id.includes("react") ||
-            id.includes("prop-types") ||
-            id.includes("react-is") ||
-            id.includes("react-reveal") ||
-            id.includes("react-cursor-custom")
-          ) {
-            return "react-vendor";
-          }
-
-          // UI Framework chunks
-          if (id.includes("baseui/") || id.includes("styletron-")) {
-            return "ui-base";
-          }
-          if (id.includes("react-bootstrap") || id.includes("bootstrap")) {
-            return "ui-bootstrap";
-          }
-          if (id.includes("styled-components") || id.includes("glamor")) {
-            return "ui-styled";
-          }
-
-          // Feature chunks
-          if (id.includes("react-ga")) {
-            return "analytics";
-          }
-          if (id.includes("react-icons") || id.includes("@iconify/react")) {
-            return "icons";
-          }
-
-          // Image handling
-          if (id.includes("react-rounded-image")) {
-            return "image-utils";
-          }
-
-          // Node modules that don't match above go to vendor
-          if (id.includes("node_modules")) {
-            return "vendor";
-          }
+        manualChunks: {
+          "react-vendor": [
+            "react",
+            "react-dom",
+            "react-is",
+            "prop-types",
+            "react-reveal",
+            "react-cursor-custom",
+          ],
+          styled: [
+            "styled-components",
+            "styletron-react",
+            "styletron-engine-atomic",
+          ],
+          ui: ["baseui", "react-bootstrap", "bootstrap"],
         },
         // Ensure consistent chunk naming
         chunkFileNames: "assets/[name]-[hash].js",
@@ -105,6 +105,10 @@ export default defineConfig({
           return "assets/[name]-[hash][extname]";
         },
       },
+    },
+    commonjsOptions: {
+      include: [/node_modules/],
+      transformMixedEsModules: true,
     },
   },
   server: {
