@@ -38,10 +38,10 @@ const skills = {
       fileName: "FullStackImg",
       skills: [
         "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications",
-        "⚡ Building responsive website front end using ReactJS",
-        "⚡ Developing mobile applications using React Native and Android",
-        "⚡ Creating application backend in Python, PHP, Node",
-        "⚡ Integration of third party services such as Firebase/ AWS / Google Cloud and more",
+        "⚡ Building responsive website front end using React, Next.js, and TypeScript",
+        "⚡ Developing mobile applications using React Native, Expo, and Android",
+        "⚡ Creating application backend in Python, Node.js, and Firebase",
+        "⚡ Integration of third party services such as Firebase, AWS, and cloud technologies",
       ],
       softwareSkills: [
         {
@@ -74,7 +74,28 @@ const skills = {
           },
         },
         {
+          skillName: "TypeScript",
+          fontAwesomeClassname: "simple-icons:typescript",
+          style: {
+            color: "#007ACC",
+          },
+        },
+        {
           skillName: "ReactJS",
+          fontAwesomeClassname: "simple-icons:react",
+          style: {
+            color: "#61DAFB",
+          },
+        },
+        {
+          skillName: "Next.js",
+          fontAwesomeClassname: "simple-icons:nextdotjs",
+          style: {
+            color: "#000000",
+          },
+        },
+        {
+          skillName: "React Native",
           fontAwesomeClassname: "simple-icons:react",
           style: {
             color: "#61DAFB",
@@ -101,13 +122,13 @@ const skills = {
             color: "#439743",
           },
         },
-        // {
-        //   skillName: "GraphQL",
-        //   fontAwesomeClassname: "simple-icons:graphql",
-        //   style: {
-        //     color: "#DE33A6",
-        //   },
-        // },
+        {
+          skillName: "Firebase",
+          fontAwesomeClassname: "simple-icons:firebase",
+          style: {
+            color: "#FFCA28",
+          },
+        },
         {
           skillName: "Android",
           fontAwesomeClassname: "simple-icons:android",
@@ -122,27 +143,6 @@ const skills = {
             color: "#f89820",
           },
         },
-        // {
-        //   skillName: "Flutter",
-        //   fontAwesomeClassname: "simple-icons:flutter",
-        //   style: {
-        //     color: "#02569B",
-        //   },
-        // },
-        // {
-        //   skillName: "Dart",
-        //   fontAwesomeClassname: "simple-icons:dart",
-        //   style: {
-        //     color: "#29B0EE",
-        //   },
-        // },
-        // {
-        //   skillName: "Visual Basic",
-        //   fontAwesomeClassname: "simple-icons:dot-net",
-        //   style: {
-        //     color: "#029FCE",
-        //   },
-        // },
         {
           skillName: "MySQL",
           fontAwesomeClassname: "simple-icons:mysql",
@@ -178,25 +178,79 @@ const skills = {
             color: "#E94E32",
           },
         },
-        // {
-        //   skillName: "C",
-        //   fontAwesomeClassname: "simple-icons:c",
-        //   style: {
-        //     color: "#E94E32",
-        //   },
-        // },
-        // {
-        //   skillName: "C++",
-        //   fontAwesomeClassname: "simple-icons:cplusplus",
-        //   style: {
-        //     color: "#E94E32",
-        //   },
-        // },
         {
           skillName: "Python",
           fontAwesomeClassname: "simple-icons:python",
           style: {
             color: "#3776AB",
+          },
+        },
+        {
+          skillName: "Solana",
+          fontAwesomeClassname: "simple-icons:solana",
+          style: {
+            color: "#9945FF",
+          },
+        },
+        {
+          skillName: "Expo",
+          fontAwesomeClassname: "simple-icons:expo",
+          style: {
+            color: "#000020",
+          },
+        },
+      ],
+    },
+    {
+      title: "Blockchain Development",
+      fileName: "BlockchainImg",
+      skills: [
+        "⚡ Experience in developing Smart Contracts and DApps",
+        "⚡ Building NFT marketplaces and applications on multiple chains",
+        "⚡ Integrating with Ethereum, Solana, and Immutable X ecosystems",
+        "⚡ Working with wallets, RPC nodes, and blockchain APIs",
+      ],
+      softwareSkills: [
+        {
+          skillName: "Ethereum",
+          fontAwesomeClassname: "simple-icons:ethereum",
+          style: {
+            color: "#3C3C3D",
+          },
+        },
+        {
+          skillName: "Solana",
+          fontAwesomeClassname: "simple-icons:solana",
+          style: {
+            color: "#9945FF",
+          },
+        },
+        {
+          skillName: "IPFS",
+          fontAwesomeClassname: "simple-icons:ipfs",
+          style: {
+            color: "#65C2CB",
+          },
+        },
+        {
+          skillName: "Web3.js",
+          fontAwesomeClassname: "simple-icons:web3dotjs",
+          style: {
+            color: "#F16822",
+          },
+        },
+        {
+          skillName: "Ethers.js",
+          fontAwesomeClassname: "simple-icons:ethereum",
+          style: {
+            color: "#3C3C3D",
+          },
+        },
+        {
+          skillName: "Solidity",
+          fontAwesomeClassname: "simple-icons:solidity",
+          style: {
+            color: "#363636",
           },
         },
       ],
@@ -205,9 +259,10 @@ const skills = {
       title: "Cloud Infra-Architecture",
       fileName: "CloudInfraImg",
       skills: [
-        "⚡ Experience working on multiple cloud platforms (AWS, Google Cloud, Oracle)",
-        "⚡ Experience hosting and managing websites",
-        "⚡ Experience with CI/CD",
+        "⚡ Experience working on multiple cloud platforms (AWS, Google Cloud, Azure)",
+        "⚡ Building serverless applications with AWS Lambda and DynamoDB",
+        "⚡ Managing data storage with S3, Firebase, and NoSQL databases",
+        "⚡ Experience with CI/CD and containerization",
       ],
       softwareSkills: [
         {
@@ -263,7 +318,28 @@ const skills = {
           skillName: "GitHub Actions",
           fontAwesomeClassname: "simple-icons:githubactions",
           style: {
-            color: "#5b77ef",
+            color: "#2088FF",
+          },
+        },
+        {
+          skillName: "AWS Lambda",
+          fontAwesomeClassname: "simple-icons:awslambda",
+          style: {
+            color: "#FF9900",
+          },
+        },
+        {
+          skillName: "AWS S3",
+          fontAwesomeClassname: "simple-icons:amazons3",
+          style: {
+            color: "#569A31",
+          },
+        },
+        {
+          skillName: "AWS DynamoDB",
+          fontAwesomeClassname: "simple-icons:amazondynamodb",
+          style: {
+            color: "#4053D6",
           },
         },
       ],
@@ -558,10 +634,142 @@ const projects = {
   data: [
     {
       id: "0",
+      name: "Discord Mint Bot",
+      url: "https://github.com/itseasy21/discord-mint-bot",
+      description:
+        "A Discord bot allowing users to view their NFTs and generate AI videos from them. Supports viewing minted NFTs from collections, generating AI videos, tracking credits, and providing wallet management APIs.",
+      languages: [
+        {
+          name: "Python",
+          iconifyClass: "logos-python",
+        },
+        {
+          name: "AWS",
+          iconifyClass: "vscode-icons:file-type-aws",
+        },
+        {
+          name: "DynamoDB",
+          iconifyClass: "logos:aws-dynamodb",
+        },
+        {
+          name: "S3",
+          iconifyClass: "logos:aws-s3",
+        },
+        {
+          name: "AI",
+          iconifyClass: "carbon:machine-learning-model",
+        },
+        {
+          name: "Discord",
+          iconifyClass: "logos:discord-icon",
+        },
+      ],
+    },
+    {
+      id: "1",
+      name: "The ARK",
+      url: "https://github.com/itseasy21/TheArk-Web",
+      description:
+        "A monorepo containing multiple blockchain web applications with Yarn workspaces. Includes user-facing app, admin interface, and shared components library for NFT management and cryptocurrency transactions.",
+      languages: [
+        {
+          name: "React",
+          iconifyClass: "logos-react",
+        },
+        {
+          name: "Next.js",
+          iconifyClass: "logos:nextjs-icon",
+        },
+        {
+          name: "TypeScript",
+          iconifyClass: "vscode-icons:file-type-typescriptdef-official",
+        },
+        {
+          name: "Ethers.js",
+          iconifyClass: "file-icons:ethereum",
+        },
+        {
+          name: "Firebase",
+          iconifyClass: "logos:firebase",
+        },
+        {
+          name: "Chakra UI",
+          iconifyClass: "simple-icons:chakraui",
+        },
+      ],
+    },
+    {
+      id: "2",
+      name: "Savannah Legends",
+      url: "https://github.com/itseasy21/theark-rhino",
+      description:
+        "A Next.js-based web application that integrates with the Solana blockchain for NFT minting, collections, and statistics. Features comprehensive NFT operations with wallet adapters and Metaplex tools.",
+      languages: [
+        {
+          name: "Next.js",
+          iconifyClass: "logos:nextjs-icon",
+        },
+        {
+          name: "TypeScript",
+          iconifyClass: "vscode-icons:file-type-typescriptdef-official",
+        },
+        {
+          name: "Solana",
+          iconifyClass: "cryptocurrency:sol",
+        },
+        {
+          name: "React",
+          iconifyClass: "logos-react",
+        },
+        {
+          name: "SASS",
+          iconifyClass: "logos:sass",
+        },
+        {
+          name: "AWS Lambda",
+          iconifyClass: "logos:aws-lambda",
+        },
+      ],
+    },
+    {
+      id: "3",
+      name: "Mindful Mama Tribe App",
+      url: "https://github.com/itseasy21/mama-project",
+      description:
+        "A React Native mobile app for mothers and caregivers featuring subscription management, chat functionality, content sharing, and community features. Cross-platform for iOS and Android.",
+      languages: [
+        {
+          name: "React Native",
+          iconifyClass: "logos:react",
+        },
+        {
+          name: "Expo",
+          iconifyClass: "logos:expo-icon",
+        },
+        {
+          name: "Firebase",
+          iconifyClass: "logos:firebase",
+        },
+        {
+          name: "JavaScript",
+          iconifyClass: "logos-javascript",
+        },
+        {
+          name: "OneSignal",
+          iconifyClass: "simple-icons:onesignal",
+        },
+        {
+          name: "Formik",
+          iconifyClass: "logos:formik",
+        },
+      ],
+    },
+    {
+      id: "4",
       name: "DecentraBox",
       url: "https://github.com/itseasy21/DecentraBox",
       description:
-        "With DecentraBox files aren’t stored in centralized data centers— instead, they're encrypted, split into pieces, and distributed on a filecoin+ipfs network.",
+        "With DecentraBox files aren't stored in centralized data centers— instead, they're encrypted, split into pieces, and distributed on a filecoin+ipfs network.",
       languages: [
         {
           name: "HTML5",
@@ -590,7 +798,7 @@ const projects = {
       ],
     },
     {
-      id: "1",
+      id: "5",
       name: "Momento",
       url: "https://momento.fan",
       description:
@@ -627,11 +835,11 @@ const projects = {
       ],
     },
     {
-      id: "2",
+      id: "6",
       name: "ShopWise",
       url: "#",
       description:
-        "We have developed “ShopWise”, an Expense Tracker Application to provide users with a simple and Interactiveactive UI to help track their spending easily and quickly.",
+        'We have developed "ShopWise", an Expense Tracker Application to provide users with a simple and Interactiveactive UI to help track their spending easily and quickly.',
       languages: [
         {
           name: "PHP",
@@ -648,7 +856,7 @@ const projects = {
       ],
     },
     {
-      id: "3",
+      id: "7",
       name: "Coin-Tracker",
       url: "https://github.com/itseasy21/Coin-Tracker",
       description:
@@ -669,7 +877,7 @@ const projects = {
       ],
     },
     {
-      id: "4",
+      id: "8",
       name: "Kungfluz",
       url: "https://kungfluz.com",
       description:
@@ -690,7 +898,7 @@ const projects = {
       ],
     },
     {
-      id: "5",
+      id: "9",
       name: "S&E Real Estate",
       url: "https://github.com/itseasy21/S-E-Real-Estate",
       description:
@@ -707,11 +915,11 @@ const projects = {
       ],
     },
     {
-      id: "6",
+      id: "10",
       name: "Zombie Network",
       url: "https://github.com/itseasy21/zombie_network",
       description:
-        "A network of Telegram users accounts and bots to track, influence and monitor Telegram Users and communities within the native application..",
+        "A network of Telegram users accounts and bots to track, influence and monitor Telegram Users and communities within the native application.",
       languages: [
         {
           name: "HTML5",
@@ -728,7 +936,7 @@ const projects = {
       ],
     },
     {
-      id: "7",
+      id: "11",
       name: "InstaBot",
       url: "https://github.com/itseasy21/InstaBot",
       description:
