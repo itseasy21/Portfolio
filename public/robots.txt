@@ -1,2 +1,13 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://shubham-mathur.me/sitemap.xml
+
+# No need to crawl these files
+Disallow: /_headers
+Disallow: /_redirects
+Disallow: /wrangler.toml
+Disallow: /cloudflare.toml
+Disallow: /.github/

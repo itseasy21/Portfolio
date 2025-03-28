@@ -1,3 +1,22 @@
+.software-skills-section {
+  margin-bottom: 30px;
+}
+
+.skills-heading {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  text-align: center;
+  font-family: "Google Sans Bold";
+}
+
+.skills-description {
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: "Google Sans Regular";
+}
+
 .dev-icons {
   padding-left: 0;
   list-style: none;
@@ -20,4 +39,18 @@
 
 .software-skill-inline > i:hover {
   color: #645beb;
+}
+
+@media (max-width: 768px) {
+  .skills-heading {
+    font-size: 20px;
+  }
+
+  .skills-description {
+    font-size: 16px;
+  }
+
+  .dev-icons {
+    font-size: 2.5rem;
+  }
 }

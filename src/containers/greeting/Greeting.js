@@ -20,12 +20,18 @@ export default function Greeting(props) {
 
   return (
     <Fade bottom duration={2000} distance="40px">
-      <div className="greet-main" id="greeting">
+      <section
+        className="greet-main"
+        id="greeting"
+        aria-labelledby="greeting-title"
+      >
         <div className="greeting-main">
           <div className="greeting-text-div">
             <div>
-              <h1 className="greeting-text">{greeting.title}</h1>
-              <p
+              <h1 id="greeting-title" className="greeting-text">
+                {greeting.title}
+              </h1>
+              <h2
                 className="greeting-text-p subTitle"
                 style={{ color: theme.secondaryText }}
               >
@@ -34,6 +40,12 @@ export default function Greeting(props) {
                   {greeting.full_name}.{" "}
                 </span>
                 {greeting.subTitle}
+              </h2>
+              <p className="greeting-description">
+                Passionate about creating robust, scalable web applications
+                using modern technologies. Specializing in full-stack
+                development with expertise in React, Node.js, and cloud
+                technologies.
               </p>
               <SocialMedia />
               <div className="portfolio-repo-btn-div">
@@ -43,6 +55,7 @@ export default function Greeting(props) {
                   onClick={() => {
                     navigate("/contact");
                   }}
+                  aria-label="Contact Me"
                 >
                   Contact Me
                 </button>
@@ -50,10 +63,13 @@ export default function Greeting(props) {
             </div>
           </div>
           <div className="greeting-image-div">
-            <FeelingProud theme={theme} />
+            <FeelingProud
+              theme={theme}
+              alt="Shubham Mathur - Developer Illustration"
+            />
           </div>
         </div>
-      </div>
+      </section>
     </Fade>
   );
 }
