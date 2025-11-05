@@ -473,12 +473,12 @@ const experience = {
       title: "Work Experience",
       experiences: [
         {
-          title: "Contract",
+          title: "Full Stack Developer",
           company: "Directed Electric Australia",
           company_url: "https://www.directed.com.au/",
           logo_path: "directed.png",
           duration: "Feb 2022 - Present",
-          location: "Remote Contract",
+          location: "Remote - Full-time",
           description: `Operating from 3 main divisions; OEM, Telematics & Retail, Directed partner with leading global brands to bring product to market across leading National Retailers, Specialist Chains, Independent Stores, plus an extensive network of trade and OEM customers.
           ⚈ Contracted to work on the current next-generation telematics platform build and evolution to a large scale IoT platform. In addition, occasional maintenance of various operational tools used to support the previous generation of Telematics and IoT platforms, including internal & customer-facing portals.
           ⚈ Collaborating with teams globally around Australia (Melbourne, Brisbane), Hungary & New Zealand to facilitate front-end and backend development.
