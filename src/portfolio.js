@@ -702,6 +702,60 @@ const projects = {
   data: [
     {
       id: "0",
+      name: "React Leaflet Draw Next",
+      url: "https://github.com/itseasy21/react-leaflet-draw-next",
+      description:
+        "React component integrating drawing and editing tools into Leaflet maps. Enables creating markers, polylines, polygons, circles, and rectangles with edit capabilities for React-Leaflet v5 and React 19.",
+      languages: [
+        {
+          name: "React",
+          iconifyClass: "logos-react",
+        },
+        {
+          name: "TypeScript",
+          iconifyClass: "vscode-icons:file-type-typescriptdef-official",
+        },
+        {
+          name: "JavaScript",
+          iconifyClass: "logos-javascript",
+        },
+        {
+          name: "Leaflet",
+          iconifyClass: "logos:leaflet",
+        },
+      ],
+    },
+    {
+      id: "1",
+      name: "React Elastic Carousel",
+      url: "https://github.com/itseasy21/react-elastic-carousel",
+      description:
+        "A flexible and responsive carousel component for React applications with element resize support and RTL language compatibility. Supports React 16.8.3 to 19 with true responsive behavior based on container dimensions.",
+      languages: [
+        {
+          name: "React",
+          iconifyClass: "logos-react",
+        },
+        {
+          name: "JavaScript",
+          iconifyClass: "logos-javascript",
+        },
+        {
+          name: "TypeScript",
+          iconifyClass: "vscode-icons:file-type-typescriptdef-official",
+        },
+        {
+          name: "Styled Components",
+          iconifyClass: "vscode-icons:file-type-styled",
+        },
+        {
+          name: "Rollup",
+          iconifyClass: "vscode-icons:file-type-rollup",
+        },
+      ],
+    },
+    {
+      id: "2",
       name: "AHCM ETL & Analytics Pipeline",
       url: "#",
       description:
@@ -742,7 +796,7 @@ const projects = {
       ],
     },
     {
-      id: "1",
+      id: "3",
       name: "Discord Mint Bot",
       url: "https://github.com/itseasy21/discord-mint-bot",
       description:
@@ -775,7 +829,7 @@ const projects = {
       ],
     },
     {
-      id: "2",
+      id: "4",
       name: "The ARK",
       url: "https://github.com/itseasy21/TheArk-Web",
       description:
@@ -808,7 +862,7 @@ const projects = {
       ],
     },
     {
-      id: "3",
+      id: "5",
       name: "Savannah Legends",
       url: "https://github.com/itseasy21/theark-rhino",
       description:
@@ -841,7 +895,7 @@ const projects = {
       ],
     },
     {
-      id: "4",
+      id: "6",
       name: "Mindful Mama Tribe App",
       url: "https://github.com/itseasy21/mama-project",
       description:
@@ -874,7 +928,7 @@ const projects = {
       ],
     },
     {
-      id: "5",
+      id: "7",
       name: "DecentraBox",
       url: "https://github.com/itseasy21/DecentraBox",
       description:
@@ -907,7 +961,7 @@ const projects = {
       ],
     },
     {
-      id: "6",
+      id: "8",
       name: "Momento",
       url: "https://momento.fan",
       description:
@@ -944,7 +998,7 @@ const projects = {
       ],
     },
     {
-      id: "7",
+      id: "9",
       name: "ShopWise",
       url: "#",
       description:
@@ -965,7 +1019,7 @@ const projects = {
       ],
     },
     {
-      id: "8",
+      id: "10",
       name: "Coin-Tracker",
       url: "https://github.com/itseasy21/Coin-Tracker",
       description:
@@ -986,7 +1040,7 @@ const projects = {
       ],
     },
     {
-      id: "9",
+      id: "11",
       name: "Kungfluz",
       url: "https://kungfluz.com",
       description:
@@ -1007,7 +1061,7 @@ const projects = {
       ],
     },
     {
-      id: "10",
+      id: "12",
       name: "S&E Real Estate",
       url: "https://github.com/itseasy21/S-E-Real-Estate",
       description:
@@ -1024,7 +1078,7 @@ const projects = {
       ],
     },
     {
-      id: "11",
+      id: "13",
       name: "Zombie Network",
       url: "https://github.com/itseasy21/zombie_network",
       description:
@@ -1041,60 +1095,6 @@ const projects = {
         {
           name: "Python",
           iconifyClass: "logos-python",
-        },
-      ],
-    },
-    {
-      id: "12",
-      name: "React Elastic Carousel",
-      url: "https://github.com/itseasy21/react-elastic-carousel",
-      description:
-        "A flexible and responsive carousel component for React applications with element resize support and RTL language compatibility. Supports React 16.8.3 to 19 with true responsive behavior based on container dimensions.",
-      languages: [
-        {
-          name: "React",
-          iconifyClass: "logos-react",
-        },
-        {
-          name: "JavaScript",
-          iconifyClass: "logos-javascript",
-        },
-        {
-          name: "TypeScript",
-          iconifyClass: "vscode-icons:file-type-typescriptdef-official",
-        },
-        {
-          name: "Styled Components",
-          iconifyClass: "vscode-icons:file-type-styled",
-        },
-        {
-          name: "Rollup",
-          iconifyClass: "vscode-icons:file-type-rollup",
-        },
-      ],
-    },
-    {
-      id: "13",
-      name: "React Leaflet Draw Next",
-      url: "https://github.com/itseasy21/react-leaflet-draw-next",
-      description:
-        "React component integrating drawing and editing tools into Leaflet maps. Enables creating markers, polylines, polygons, circles, and rectangles with edit capabilities for React-Leaflet v5 and React 19.",
-      languages: [
-        {
-          name: "React",
-          iconifyClass: "logos-react",
-        },
-        {
-          name: "TypeScript",
-          iconifyClass: "vscode-icons:file-type-typescriptdef-official",
-        },
-        {
-          name: "JavaScript",
-          iconifyClass: "logos-javascript",
-        },
-        {
-          name: "Leaflet",
-          iconifyClass: "logos:leaflet",
         },
       ],
     },
