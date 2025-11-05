@@ -348,12 +348,10 @@ const skills = {
       title: "Data Analytics & ETL",
       fileName: "DataScienceImg",
       skills: [
-        "⚡ Building scalable ETL pipelines processing 4M+ records daily",
-        "⚡ Designing and implementing data transformation workflows using AWS Glue",
-        "⚡ Creating business intelligence dashboards and daily reporting systems",
-        "⚡ Optimizing database performance with PostgreSQL, MySQL, and Aurora DB",
-        "⚡ Developing Python scripts for data extraction, transformation, and loading",
-        "⚡ Implementing data quality checks and monitoring for pipeline reliability",
+        "⚡ Building ETL pipelines processing 4M+ records daily with AWS Glue",
+        "⚡ Creating Power BI dashboards for daily business reporting",
+        "⚡ Optimizing database performance with PostgreSQL, MySQL & Aurora",
+        "⚡ Implementing data quality checks and pipeline monitoring",
       ],
       softwareSkills: [
         {
@@ -707,7 +705,7 @@ const projects = {
       name: "AHCM ETL & Analytics Pipeline",
       url: "#",
       description:
-        "Enterprise-scale ETL pipeline for Association Health Care Management processing 4M+ records daily. Built with AWS Glue for data transformation workflows, handling data extraction from multiple sources, transformation logic, and loading into Aurora DB. Implemented daily reporting system with Power BI dashboards delivering key business metrics and insights.",
+        "Enterprise ETL pipeline processing 4M+ records daily for Association Health Care Management. AWS Glue workflows extract and transform data from multiple sources into Aurora DB, with Power BI dashboards for daily business reporting.",
       languages: [
         {
           name: "Python",
