@@ -34,7 +34,7 @@ function Contact(props) {
               <LazyImage
                 className="profile-pic"
                 src={profileImage}
-                alt="Profile"
+                alt="Shubham Mathur - Full Stack Developer"
               />
             </div>
             <div className="contact-heading-text-div">
