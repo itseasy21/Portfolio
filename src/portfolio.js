@@ -14,7 +14,7 @@ const greeting = {
   logo_name: "<Shubham />",
   nickname: "shubham",
   full_name: "Shubham Mathur",
-  subTitle: "Full Stack Developer, Blockchain Enthusiast 🔥. Always learning.",
+  subTitle: "Full Stack Developer, Data Analytics & ETL Expert, Blockchain Enthusiast. Always learning.",
   resumeLink:
     "https://app.enhancv.com/share/ac03c824?utm_medium=growth&utm_campaign=share-resume&utm_source=dynamic",
   mail: "mailto:itseasy21@gmail.com",
@@ -344,6 +344,74 @@ const skills = {
         },
       ],
     },
+    {
+      title: "Data Analytics & ETL",
+      fileName: "DataScienceImg",
+      skills: [
+        "⚡ Building ETL pipelines processing 4M+ records daily with AWS Glue",
+        "⚡ Creating Power BI dashboards for daily business reporting",
+        "⚡ Optimizing database performance with PostgreSQL, MySQL & Aurora",
+        "⚡ Implementing data quality checks and pipeline monitoring",
+      ],
+      softwareSkills: [
+        {
+          skillName: "Python",
+          fontAwesomeClassname: "simple-icons:python",
+          style: {
+            color: "#3776AB",
+          },
+        },
+        {
+          skillName: "AWS Glue",
+          fontAwesomeClassname: "simple-icons:awsglue",
+          style: {
+            color: "#FF9900",
+          },
+        },
+        {
+          skillName: "MySQL",
+          fontAwesomeClassname: "simple-icons:mysql",
+          style: {
+            color: "#4479A1",
+          },
+        },
+        {
+          skillName: "PostgreSQL",
+          fontAwesomeClassname: "simple-icons:postgresql",
+          style: {
+            color: "#336791",
+          },
+        },
+        {
+          skillName: "AWS RDS",
+          fontAwesomeClassname: "simple-icons:amazonrds",
+          style: {
+            color: "#527FFF",
+          },
+        },
+        {
+          skillName: "Power BI",
+          fontAwesomeClassname: "simple-icons:powerbi",
+          style: {
+            color: "#F2C811",
+          },
+        },
+        {
+          skillName: "AWS",
+          fontAwesomeClassname: "simple-icons:amazonaws",
+          style: {
+            color: "#FF9900",
+          },
+        },
+        {
+          skillName: "Pandas",
+          fontAwesomeClassname: "simple-icons:pandas",
+          style: {
+            color: "#150458",
+          },
+        },
+      ],
+    },
   ],
 };
 
@@ -609,7 +677,7 @@ const experience = {
 const projectsHeader = {
   title: "Projects",
   description:
-    "My projects make use of a vast variety of latest technology tools. My experience ranges between PHP Websites, Python Application, NodeJS Backend Projects, Android Applications, Python Scripts, and React Project. I also have vast experience of SEO & SMO. Below are some of my projects. Note that not all of the mentioned projects are on GitHub yet.",
+    "My projects make use of a vast variety of latest technology tools. My experience ranges from building enterprise ETL pipelines and data analytics solutions, to PHP Websites, Python Applications, NodeJS Backend Projects, Android Applications, Blockchain DApps, and React Projects. I have extensive experience with AWS, data engineering, SEO & SMO. Below are some of my projects. Note that not all of the mentioned projects are on GitHub yet.",
   avatar_image_path: "projects_image.svg",
 };
 
@@ -634,6 +702,101 @@ const projects = {
   data: [
     {
       id: "0",
+      name: "React Leaflet Draw Next",
+      url: "https://github.com/itseasy21/react-leaflet-draw-next",
+      description:
+        "React component integrating drawing and editing tools into Leaflet maps. Enables creating markers, polylines, polygons, circles, and rectangles with edit capabilities for React-Leaflet v5 and React 19.",
+      languages: [
+        {
+          name: "React",
+          iconifyClass: "logos-react",
+        },
+        {
+          name: "TypeScript",
+          iconifyClass: "vscode-icons:file-type-typescriptdef-official",
+        },
+        {
+          name: "JavaScript",
+          iconifyClass: "logos-javascript",
+        },
+        {
+          name: "Leaflet",
+          iconifyClass: "logos:leaflet",
+        },
+      ],
+    },
+    {
+      id: "1",
+      name: "React Elastic Carousel",
+      url: "https://github.com/itseasy21/react-elastic-carousel",
+      description:
+        "A flexible and responsive carousel component for React applications with element resize support and RTL language compatibility. Supports React 16.8.3 to 19 with true responsive behavior based on container dimensions.",
+      languages: [
+        {
+          name: "React",
+          iconifyClass: "logos-react",
+        },
+        {
+          name: "JavaScript",
+          iconifyClass: "logos-javascript",
+        },
+        {
+          name: "TypeScript",
+          iconifyClass: "vscode-icons:file-type-typescriptdef-official",
+        },
+        {
+          name: "Styled Components",
+          iconifyClass: "vscode-icons:file-type-styled",
+        },
+        {
+          name: "Rollup",
+          iconifyClass: "vscode-icons:file-type-rollup",
+        },
+      ],
+    },
+    {
+      id: "2",
+      name: "AHCM ETL & Analytics Pipeline",
+      url: "#",
+      description:
+        "Enterprise ETL pipeline processing 4M+ records daily for Association Health Care Management. AWS Glue workflows extract and transform data from multiple sources into Aurora DB, with Power BI dashboards for daily business reporting.",
+      languages: [
+        {
+          name: "Python",
+          iconifyClass: "logos-python",
+        },
+        {
+          name: "AWS Glue",
+          iconifyClass: "vscode-icons:file-type-aws",
+        },
+        {
+          name: "MySQL",
+          iconifyClass: "logos:mysql",
+        },
+        {
+          name: "PostgreSQL",
+          iconifyClass: "logos:postgresql",
+        },
+        {
+          name: "AWS RDS",
+          iconifyClass: "vscode-icons:file-type-aws",
+        },
+        {
+          name: "Aurora DB",
+          iconifyClass: "vscode-icons:file-type-aws",
+        },
+        {
+          name: "Power BI",
+          iconifyClass: "simple-icons:powerbi",
+        },
+        {
+          name: "ETL",
+          iconifyClass: "carbon:data-structured",
+        },
+      ],
+    },
+    {
+      id: "3",
       name: "Discord Mint Bot",
       url: "https://github.com/itseasy21/discord-mint-bot",
       description:
@@ -666,7 +829,7 @@ const projects = {
       ],
     },
     {
-      id: "1",
+      id: "4",
       name: "The ARK",
       url: "https://github.com/itseasy21/TheArk-Web",
       description:
@@ -699,7 +862,7 @@ const projects = {
       ],
     },
     {
-      id: "2",
+      id: "5",
       name: "Savannah Legends",
       url: "https://github.com/itseasy21/theark-rhino",
       description:
@@ -732,7 +895,7 @@ const projects = {
       ],
     },
     {
-      id: "3",
+      id: "6",
       name: "Mindful Mama Tribe App",
       url: "https://github.com/itseasy21/mama-project",
       description:
@@ -765,7 +928,7 @@ const projects = {
       ],
     },
     {
-      id: "4",
+      id: "7",
       name: "DecentraBox",
       url: "https://github.com/itseasy21/DecentraBox",
       description:
@@ -798,7 +961,7 @@ const projects = {
       ],
     },
     {
-      id: "5",
+      id: "8",
       name: "Momento",
       url: "https://momento.fan",
       description:
@@ -835,7 +998,7 @@ const projects = {
       ],
     },
     {
-      id: "6",
+      id: "9",
       name: "ShopWise",
       url: "#",
       description:
@@ -856,7 +1019,7 @@ const projects = {
       ],
     },
     {
-      id: "7",
+      id: "10",
       name: "Coin-Tracker",
       url: "https://github.com/itseasy21/Coin-Tracker",
       description:
@@ -877,7 +1040,7 @@ const projects = {
       ],
     },
     {
-      id: "8",
+      id: "11",
       name: "Kungfluz",
       url: "https://kungfluz.com",
       description:
@@ -898,7 +1061,7 @@ const projects = {
       ],
     },
     {
-      id: "9",
+      id: "12",
       name: "S&E Real Estate",
       url: "https://github.com/itseasy21/S-E-Real-Estate",
       description:
@@ -915,7 +1078,7 @@ const projects = {
       ],
     },
     {
-      id: "10",
+      id: "13",
       name: "Zombie Network",
       url: "https://github.com/itseasy21/zombie_network",
       description:
@@ -932,31 +1095,6 @@ const projects = {
         {
           name: "Python",
           iconifyClass: "logos-python",
-        },
-      ],
-    },
-    {
-      id: "11",
-      name: "InstaBot",
-      url: "https://github.com/itseasy21/InstaBot",
-      description:
-        "A Personal Portfolio Website that showcases my work and experience. which is hosted on Github Pages.",
-      languages: [
-        {
-          name: "HTML5",
-          iconifyClass: "vscode-icons:file-type-html",
-        },
-        {
-          name: "CSS3",
-          iconifyClass: "vscode-icons:file-type-css",
-        },
-        {
-          name: "Python",
-          iconifyClass: "logos-python",
-        },
-        {
-          name: "JavaScript",
-          iconifyClass: "logos-javascript",
         },
       ],
     },
