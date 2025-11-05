@@ -1046,26 +1046,55 @@ const projects = {
     },
     {
       id: "12",
-      name: "InstaBot",
-      url: "https://github.com/itseasy21/InstaBot",
+      name: "React Elastic Carousel",
+      url: "https://github.com/itseasy21/react-elastic-carousel",
       description:
-        "A Personal Portfolio Website that showcases my work and experience. which is hosted on Github Pages.",
+        "A flexible and responsive carousel component for React applications with element resize support and RTL language compatibility. Supports React 16.8.3 to 19 with true responsive behavior based on container dimensions.",
       languages: [
         {
-          name: "HTML5",
-          iconifyClass: "vscode-icons:file-type-html",
-        },
-        {
-          name: "CSS3",
-          iconifyClass: "vscode-icons:file-type-css",
-        },
-        {
-          name: "Python",
-          iconifyClass: "logos-python",
+          name: "React",
+          iconifyClass: "logos-react",
         },
         {
           name: "JavaScript",
           iconifyClass: "logos-javascript",
+        },
+        {
+          name: "TypeScript",
+          iconifyClass: "vscode-icons:file-type-typescriptdef-official",
+        },
+        {
+          name: "Styled Components",
+          iconifyClass: "vscode-icons:file-type-styled",
+        },
+        {
+          name: "Rollup",
+          iconifyClass: "vscode-icons:file-type-rollup",
+        },
+      ],
+    },
+    {
+      id: "13",
+      name: "React Leaflet Draw Next",
+      url: "https://github.com/itseasy21/react-leaflet-draw-next",
+      description:
+        "React component integrating drawing and editing tools into Leaflet maps. Enables creating markers, polylines, polygons, circles, and rectangles with edit capabilities for React-Leaflet v5 and React 19.",
+      languages: [
+        {
+          name: "React",
+          iconifyClass: "logos-react",
+        },
+        {
+          name: "TypeScript",
+          iconifyClass: "vscode-icons:file-type-typescriptdef-official",
+        },
+        {
+          name: "JavaScript",
+          iconifyClass: "logos-javascript",
+        },
+        {
+          name: "Leaflet",
+          iconifyClass: "logos:leaflet",
         },
       ],
     },
