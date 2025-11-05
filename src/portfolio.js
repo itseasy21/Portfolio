@@ -14,7 +14,7 @@ const greeting = {
   logo_name: "<Shubham />",
   nickname: "shubham",
   full_name: "Shubham Mathur",
-  subTitle: "Full Stack Developer, Blockchain Enthusiast 🔥. Always learning.",
+  subTitle: "Full Stack Developer, Data Analytics & ETL Expert, Blockchain Enthusiast. Always learning.",
   resumeLink:
     "https://app.enhancv.com/share/ac03c824?utm_medium=growth&utm_campaign=share-resume&utm_source=dynamic",
   mail: "mailto:itseasy21@gmail.com",
@@ -344,6 +344,76 @@ const skills = {
         },
       ],
     },
+    {
+      title: "Data Analytics & ETL",
+      fileName: "DataScienceImg",
+      skills: [
+        "⚡ Building scalable ETL pipelines processing 4M+ records daily",
+        "⚡ Designing and implementing data transformation workflows using AWS Glue",
+        "⚡ Creating business intelligence dashboards and daily reporting systems",
+        "⚡ Optimizing database performance with PostgreSQL, MySQL, and Aurora DB",
+        "⚡ Developing Python scripts for data extraction, transformation, and loading",
+        "⚡ Implementing data quality checks and monitoring for pipeline reliability",
+      ],
+      softwareSkills: [
+        {
+          skillName: "Python",
+          fontAwesomeClassname: "simple-icons:python",
+          style: {
+            color: "#3776AB",
+          },
+        },
+        {
+          skillName: "AWS Glue",
+          fontAwesomeClassname: "simple-icons:awsglue",
+          style: {
+            color: "#FF9900",
+          },
+        },
+        {
+          skillName: "MySQL",
+          fontAwesomeClassname: "simple-icons:mysql",
+          style: {
+            color: "#4479A1",
+          },
+        },
+        {
+          skillName: "PostgreSQL",
+          fontAwesomeClassname: "simple-icons:postgresql",
+          style: {
+            color: "#336791",
+          },
+        },
+        {
+          skillName: "AWS RDS",
+          fontAwesomeClassname: "simple-icons:amazonrds",
+          style: {
+            color: "#527FFF",
+          },
+        },
+        {
+          skillName: "Power BI",
+          fontAwesomeClassname: "simple-icons:powerbi",
+          style: {
+            color: "#F2C811",
+          },
+        },
+        {
+          skillName: "AWS",
+          fontAwesomeClassname: "simple-icons:amazonaws",
+          style: {
+            color: "#FF9900",
+          },
+        },
+        {
+          skillName: "Pandas",
+          fontAwesomeClassname: "simple-icons:pandas",
+          style: {
+            color: "#150458",
+          },
+        },
+      ],
+    },
   ],
 };
 
@@ -609,7 +679,7 @@ const experience = {
 const projectsHeader = {
   title: "Projects",
   description:
-    "My projects make use of a vast variety of latest technology tools. My experience ranges between PHP Websites, Python Application, NodeJS Backend Projects, Android Applications, Python Scripts, and React Project. I also have vast experience of SEO & SMO. Below are some of my projects. Note that not all of the mentioned projects are on GitHub yet.",
+    "My projects make use of a vast variety of latest technology tools. My experience ranges from building enterprise ETL pipelines and data analytics solutions, to PHP Websites, Python Applications, NodeJS Backend Projects, Android Applications, Blockchain DApps, and React Projects. I have extensive experience with AWS, data engineering, SEO & SMO. Below are some of my projects. Note that not all of the mentioned projects are on GitHub yet.",
   avatar_image_path: "projects_image.svg",
 };
 
@@ -634,6 +704,47 @@ const projects = {
   data: [
     {
       id: "0",
+      name: "AHCM ETL & Analytics Pipeline",
+      url: "#",
+      description:
+        "Enterprise-scale ETL pipeline for Association Health Care Management processing 4M+ records daily. Built with AWS Glue for data transformation workflows, handling data extraction from multiple sources, transformation logic, and loading into Aurora DB. Implemented daily reporting system with Power BI dashboards delivering key business metrics and insights.",
+      languages: [
+        {
+          name: "Python",
+          iconifyClass: "logos-python",
+        },
+        {
+          name: "AWS Glue",
+          iconifyClass: "vscode-icons:file-type-aws",
+        },
+        {
+          name: "MySQL",
+          iconifyClass: "logos:mysql",
+        },
+        {
+          name: "PostgreSQL",
+          iconifyClass: "logos:postgresql",
+        },
+        {
+          name: "AWS RDS",
+          iconifyClass: "vscode-icons:file-type-aws",
+        },
+        {
+          name: "Aurora DB",
+          iconifyClass: "vscode-icons:file-type-aws",
+        },
+        {
+          name: "Power BI",
+          iconifyClass: "simple-icons:powerbi",
+        },
+        {
+          name: "ETL",
+          iconifyClass: "carbon:data-structured",
+        },
+      ],
+    },
+    {
+      id: "1",
       name: "Discord Mint Bot",
       url: "https://github.com/itseasy21/discord-mint-bot",
       description:
@@ -666,7 +777,7 @@ const projects = {
       ],
     },
     {
-      id: "1",
+      id: "2",
       name: "The ARK",
       url: "https://github.com/itseasy21/TheArk-Web",
       description:
@@ -699,7 +810,7 @@ const projects = {
       ],
     },
     {
-      id: "2",
+      id: "3",
       name: "Savannah Legends",
       url: "https://github.com/itseasy21/theark-rhino",
       description:
@@ -732,7 +843,7 @@ const projects = {
       ],
     },
     {
-      id: "3",
+      id: "4",
       name: "Mindful Mama Tribe App",
       url: "https://github.com/itseasy21/mama-project",
       description:
@@ -765,7 +876,7 @@ const projects = {
       ],
     },
     {
-      id: "4",
+      id: "5",
       name: "DecentraBox",
       url: "https://github.com/itseasy21/DecentraBox",
       description:
@@ -798,7 +909,7 @@ const projects = {
       ],
     },
     {
-      id: "5",
+      id: "6",
       name: "Momento",
       url: "https://momento.fan",
       description:
@@ -835,7 +946,7 @@ const projects = {
       ],
     },
     {
-      id: "6",
+      id: "7",
       name: "ShopWise",
       url: "#",
       description:
@@ -856,7 +967,7 @@ const projects = {
       ],
     },
     {
-      id: "7",
+      id: "8",
       name: "Coin-Tracker",
       url: "https://github.com/itseasy21/Coin-Tracker",
       description:
@@ -877,7 +988,7 @@ const projects = {
       ],
     },
     {
-      id: "8",
+      id: "9",
       name: "Kungfluz",
       url: "https://kungfluz.com",
       description:
@@ -898,7 +1009,7 @@ const projects = {
       ],
     },
     {
-      id: "9",
+      id: "10",
       name: "S&E Real Estate",
       url: "https://github.com/itseasy21/S-E-Real-Estate",
       description:
@@ -915,7 +1026,7 @@ const projects = {
       ],
     },
     {
-      id: "10",
+      id: "11",
       name: "Zombie Network",
       url: "https://github.com/itseasy21/zombie_network",
       description:
@@ -936,7 +1047,7 @@ const projects = {
       ],
     },
     {
-      id: "11",
+      id: "12",
       name: "InstaBot",
       url: "https://github.com/itseasy21/InstaBot",
       description:
