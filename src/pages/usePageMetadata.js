@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-const DEFAULT_SITE_NAME = "Shubham Mathur Portfolio";
+const DEFAULT_SITE_NAME = "Shubham Mathur | Portfolio";
 const DEFAULT_LOCALE = "en_US";
 const BASE_URL = "https://shubham-mathur.me";
 const DEFAULT_IMAGE = "/social-preview.svg";
