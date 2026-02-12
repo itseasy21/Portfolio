@@ -29,7 +29,7 @@ function Header(props) {
     },
   });
 
-  const link = settings.isSplash ? "/splash" : "home";
+  const link = settings.isSplash ? "/splash" : "/home";
 
   function changeTheme() {
     const newTheme = theme.name === "light" ? "dark" : "light";
