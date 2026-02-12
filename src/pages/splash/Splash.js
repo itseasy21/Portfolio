@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Splash.css";
 import { Navigate } from "react-router-dom";
+import usePageMetadata from "../usePageMetadata";
 
 function AnimatedSplash(props) {
   return (
@@ -20,6 +21,13 @@ function AnimatedSplash(props) {
 
 function Splash(props) {
   const [redirect, setRedirect] = useState(false);
+
+  usePageMetadata({
+    title: "Welcome | Shubham Mathur",
+    description:
+      "Loading Shubham Mathur's portfolio with projects, experience, and contact details.",
+    path: "/splash",
+  });
   setTimeout(() => setRedirect(true), 1000);
 
   return redirect ? (

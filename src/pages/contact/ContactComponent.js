@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
@@ -10,12 +10,20 @@ import { style } from "glamor";
 import LazyImage from "../../components/LazyImage";
 // Import the image directly
 import profileImage from "../../assests/images/shubham.jpg";
+import usePageMetadata from "../usePageMetadata";
 
 const ContactData = contactPageData.contactSection;
 const blogSection = contactPageData.blogSection;
 
 function Contact(props) {
   const theme = props.theme;
+
+  usePageMetadata({
+    title: "Contact | Shubham Mathur",
+    description:
+      "Get in touch with Shubham Mathur for opportunities, collaborations, and consulting projects.",
+    path: "/contact",
+  });
 
   const styles = style({
     backgroundColor: `${theme.accentBright}`,

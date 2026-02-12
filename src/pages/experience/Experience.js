@@ -6,9 +6,17 @@ import "./Experience.css";
 import { experience } from "../../portfolio.js";
 import { Fade } from "react-reveal";
 import ExperienceImg from "./ExperienceImg";
+import usePageMetadata from "../usePageMetadata";
 
 function Experience(props) {
   const theme = props.theme;
+
+  usePageMetadata({
+    title: "Experience | Shubham Mathur",
+    description:
+      "Review Shubham Mathur's professional experience in software engineering, architecture, and product delivery.",
+    path: "/experience",
+  });
   return (
     <div className="experience-main">
       <Header theme={theme} setTheme={props.setTheme} />

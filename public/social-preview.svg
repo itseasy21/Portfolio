@@ -1,0 +1,34 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Shubham Mathur Portfolio Social Preview</title>
+  <desc id="desc">A social preview image with a dark gradient background and branding text for Shubham Mathur's portfolio website.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#090D1F"/>
+      <stop offset="1" stop-color="#1A2B5A"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="157" y1="152" x2="985" y2="522" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8F94FB"/>
+      <stop offset="1" stop-color="#4E54C8"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <circle cx="1080" cy="84" r="142" fill="#4E54C8" fill-opacity="0.25"/>
+  <circle cx="136" cy="548" r="184" fill="#8F94FB" fill-opacity="0.2"/>
+
+  <rect x="157" y="152" width="886" height="326" rx="32" fill="url(#accent)" fill-opacity="0.2" stroke="#8F94FB" stroke-opacity="0.6"/>
+
+  <text x="220" y="267" fill="#FFFFFF" font-family="'Segoe UI', Arial, sans-serif" font-size="62" font-weight="700">
+    Shubham Mathur
+  </text>
+  <text x="220" y="333" fill="#D5DCFF" font-family="'Segoe UI', Arial, sans-serif" font-size="34" font-weight="500">
+    Full Stack Developer · Data Analytics &amp; ETL Expert
+  </text>
+  <text x="220" y="389" fill="#D5DCFF" font-family="'Segoe UI', Arial, sans-serif" font-size="34" font-weight="500">
+    Blockchain Enthusiast
+  </text>
+  <text x="220" y="440" fill="#FFFFFF" font-family="'Segoe UI', Arial, sans-serif" font-size="28" font-weight="600">
+    shubham-mathur.me
+  </text>
+</svg>

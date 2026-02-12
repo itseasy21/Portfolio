@@ -7,9 +7,17 @@ import { projectsHeader, projects } from "../../portfolio.js";
 import "./Projects.css";
 import ProjectsImg from "./ProjectsImg";
 import { style } from "glamor";
+import usePageMetadata from "../usePageMetadata";
 
 function Projects(props) {
   const theme = props.theme;
+
+  usePageMetadata({
+    title: "Projects | Shubham Mathur",
+    description:
+      "Explore selected projects built by Shubham Mathur across web, cloud, and blockchain domains.",
+    path: "/projects",
+  });
 
   const styles = style({
     backgroundColor: `${theme.accentBright}`,
