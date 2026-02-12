@@ -6,9 +6,17 @@ import Certifications from "../../containers/certifications/Certifications";
 import EducationImg from "./EducationImg";
 import "./EducationComponent.css";
 import { Fade } from "react-reveal";
+import usePageMetadata from "../usePageMetadata";
 
 function Education(props) {
   const theme = props.theme;
+
+  usePageMetadata({
+    title: "Education | Shubham Mathur",
+    description:
+      "Learn about Shubham Mathur's education background and certifications in technology and software development.",
+    path: "/education",
+  });
   return (
     <div className="education-main">
       <Header theme={props.theme} setTheme={props.setTheme} />
