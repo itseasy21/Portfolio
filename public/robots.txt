@@ -2,10 +2,10 @@
 User-agent: *
 Allow: /
 
-# Sitemap location
+# Authoritative sitemap
 Sitemap: https://shubham-mathur.me/sitemap.xml
 
-# No need to crawl these files
+# No need to crawl deployment/config files
 Disallow: /_headers
 Disallow: /_redirects
 Disallow: /wrangler.toml
